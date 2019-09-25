@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--1.只做一个模拟的银行取款机
+		2.设置一个银行卡号,密码和一个金额
+		3.用户输入卡号和密码后输入要取的金额
+		4.前提不能大于卡内余额
+		5.取完后显示取后余额-->
+		<script>
+			var yhk = '123456789' ;
+			var mm  = '123456' ;
+			var ye = '10000' ;
+			do{
+			  var yhk = Number(prompt("请输入您的银行卡号"));
+				if(yhk == "123456789"){
+					var mm = Number(prompt("请输入您的银行密码"));
+					if (mm == "123456") {
+						var qkye = Number(prompt("请输入您的取款金额"));
+						if (isNaN(ye)) {
+							alert("请输入数字");
+						} else{
+							if(qkye<=10000 ){
+								alert("您还剩余额为"+ (ye-qkye));
+							}
+						}
+					} else{
+						alert("您的银行卡密码有误，请检查");
+					}
+			    }else{
+			    	alert("您的银行卡账号有误，请检查");
+			    }
+			}while ( yhk == "123456789");
+		</script>
+	</body>
+</html>
