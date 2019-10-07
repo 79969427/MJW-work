@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       #header{
+           width:100%;
+           height: 84px;
+           border-bottom: 1px solid  #6c757d; 
+       }
+       #head-left ul li{
+           list-style: none;
+           float: left;
+           padding: 25px;
+       }
+       a{
+           text-decoration: none;
+           color: #787878;
+       }
+       a:hover{
+           color: #000000;
+       }
+       #head-right ul li{
+           list-style: none;
+           float: right;
+       }
+       h2{
+          text-align: center;
+          color: #000000;
+          font-size: 30px;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-family: "Ubuntu", sans-serif;
+          letter-spacing: 1px;
+          line-height: 140px;
+       }
+       #bgimage{
+           width: 100%;
+           height: 140px;
+           background-image: url(breadcumb.jpg);
+       }
+       #row{
+           width: 1140px;
+           height: 1715px;
+           margin: 0 auto;
+           background-color: red;
+           position: relative;
+       }
+       #row-left{
+           width: 285px;
+           height: 100%;
+           background-color: #fff;
+           float: left;
+       }
+       #row-left ul{
+           margin-left: 15px; 
+       }
+       #row-left ul li{
+           list-style: none;
+           text-transform: capitalize;
+           font-size: 14px;
+           margin-bottom: 5px;
+           display: block;
+           font-weight: 300;
+           color: #787878;
+       }
+       #row-right{
+           width: 855px;
+           height: 100%;
+           background-color: #fff;
+           float: left;
+       }
+       #left-name{
+           width: 100%;
+           height: 23px;
+           margin: 0 0 30px;
+       }
+       #left-xianame h6{
+           margin-bottom:20px； 
+       }
+       #ul-name h6{
+           transition: all 500ms ease 0s;
+           text-decoration: none;
+           outline: 0 solid transparent;
+           color: #fbf5f5;
+           font-weight: 600;
+           margin-bottom: 15px;
+           font-size: 12px;
+       }
+       #left-name h6{
+          font-size: 18px;
+          text-transform: capitalize;
+          font-weight: 600;
+       }
+       #box-one div{
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+          border: 0px;
+          float: left;
+       }
+       #box-two div{
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+          border: 0px ;
+          float: left;
+       }
+       #shop-one div{
+           width: 285px;
+           height: 498px;
+           background-color: #FFf;
+           float: left;
+       }
+       #shop-two div{
+           width: 285px;
+           height: 498px;
+           background-color: #FFf;
+           float: left;
+       }
+       #shop-three div{
+           width: 285px;
+           height: 498px;
+           background-color: #FFf;
+           float: left;
+       }
+       #row-right span{
+          font-size: 10px;
+          text-transform: uppercase;
+          color: #787878;
+          margin-bottom: 15px;
+          letter-spacing: 0.75px;
+          font-weight: 600;
+          margin-left: 15px;
+        }
+        #shop-one h6{
+            color: #222222;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-left: 15px;
+            font-weight: 700;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 16px;
+        }
+        #shop-two h6{
+            color: #222222;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-left: 15px;
+            font-weight: 700;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 16px;
+        }
+        #shop-three h6{
+            color: #222222;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-left: 15px;
+            font-weight: 700;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 16px;
+        }
+        #row-right p{
+            margin-bottom: 0;
+            font-size: 14px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            color: #000000;
+            margin-left: 15px;
+        }
+        #btn-list div{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ebebeb;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 38px;
+            padding: 0;
+            text-align: center;
+            color: #787878;
+            float: left;
+        }
+        #logo-left ul{
+        	text-decoration: none;
+        	list-style: none;
+        }
+        #logo-left ul li{
+        	float: left;
+        	font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            display: block;
+            font-weight: 400;
+			font-family: "Ubuntu", sans-serif;
+			padding: 0 10px;
+			text-transform: capitalize;
+        }
+         #logo-left ul li a:hover{
+         	color: #fff;
+         	transition: 0.5s;
+         }
+         #logo-list{
+         	margin-left: 240px;
+         }
+         #logo-list ul{
+         	list-style: none;
+         	margin-right: 150px;
+         }
+         #logo-list ul li{
+         	    font-size: 12px;
+			    color: rgba(255, 255, 255, 0.4);
+			    display: block;
+			    font-weight: 400;
+			    margin-bottom: 10px;
+         }
+         #logo-list ul li a:hover{
+         	color: #fff;
+         	transition: 0.5s;
+         }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="head-left">
+            <ul>
+                <li><img src="logo.png" alt=""></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div id="head-right">
+            <ul>
+                
+                <li style="border:none;width: 90px;line-height:85px; text-align: center;height: 85px;"><a href=""><img src="bag.svg" style="width: 20px;height: 20px;" /></a></li>
+                <li style="border:none;width: 90px;line-height:85px; text-align: center; border-right:1px  solid #ebebeb;height: 85px;"><a href=""><img src="user.svg" style="width: 20px;height: 20px;" /></a></li>
+                <li style="border:none;width: 90px;line-height:85px; text-align: center; border-right:1px  solid #ebebeb;height: 85px;"><a href=""><img src="heart.svg" style="width: 20px;height: 20px;" /></a></li>
+                <li style="border-left:1px solid #ebebeb;width: 200px;line-height:85px; text-align: center; border-right:1px  solid #ebebeb;height: 85px;"><a href=""></a>Type for search</li>
+            </ul>
+        </div>
+    </div>
+    <div id="body">
+        <div id="bgimage">
+            <h2>DRESSES</h2>
+        </div>
+        <div id="row" style="margin-top: 80px">
+            <div id="row-left">
+                <div id="left-name">
+                   <h6>Catagories<h6>  
+                </div>
+                <div id="ul-name">
+                        <h6>CLOTHES<h6>  
+                </div>
+                <ul>
+                    <li><a href="">All</a></li>
+                    <li><a href="">Bodysuits</a></li>
+                    <li><a href="">Dresses</a></li>
+                    <li><a href="">Hoodies Sweats</a></li>
+                    <li><a href="">Jackets Coats</a></li>
+                    <li><a href="">Jeans</a></li>
+                    <li><a href="">Pants Leggings</a></li>
+                    <li><a href="">Rompers  Jumpsuits</a></li>
+                    <li><a href="">Shirts  Blouses</a></li>
+                    <li><a href="">Shirts</a></li>
+                    <li><a href="">Sweaters  Knits</a></li>
+                </ul>
+                <div id="ul-name">
+                        <h6><a href="" style="color: #fbf5f5">SHOES</a><h6>  
+                </div>
+                <div id="ul-name">
+                        <h6><a href="" style="color: #fbf5f5">ACCESSORIES</a><h6>  
+                </div>
+                <div id="left-name">
+                        <h6>Filter By<h6>  
+                </div>
+                <div id="left-xianame" style="margin-bottom: 30px">
+                        <h6>PRICE<h6>  
+                </div>
+
+                <div id="left-xianame" style="margin-bottom: 50px">
+                        <h6>RANGE:$49.00-$360.00<h6>  
+                </div>
+
+                <div id="left-xianame" style="margin-bottom: 30px">
+                        <h6>COLOR<h6>  
+                </div>
+                <div id="color-box">
+                     <div id="box-one" style="width:255px;">
+                          <div style="background-color: #fff;border: 1px solid gray;width: 28px;height: 28px;"></div>
+                          <div style="background-color: #969696"></div>
+                          <div style="background-color: #030303"></div>
+                          <div style="background-color: #0315ff"></div>
+                          <div style="background-color: #dc0647"></div>
+                     </div>
+                     <br>
+                     <div id="box-two" style="width:255px;margin-top: 20px;">
+                          <div style="background-color: #fff56a"></div>
+                          <div style="background-color: #f26e51"></div>
+                          <div style="background-color: #9a8777"></div>
+                          <div style="background-color: #5b816a"></div>
+                          <div style="background-color: #8662a9"></div>
+                     </div>
+                </div>
+                <div id="kong" style="height: 80px;width: 255px;">
+
+                </div>
+                <div id="left-xianame" style="margin-bottom: 30px;">
+                        <h6>BRANDS<h6>  
+                </div>
+
+                <ul>
+                     <li><a href="">Asos</a></li>
+                     <li><a href="">Mango</a></li>
+                     <li><a href="">River island</a></li>
+                     <li><a href="">Topshop</a></li>
+                     <li><a href="">Zara</a></li>
+                </ul>
+            </div>
+            <div id="row-right">
+                <div id="right-name">
+                    <h6 style="float: left"><p style="font-size:12px;color: blue;float:left;">186</p> PRODUCTS FOUND</h6>
+                    <h6 style="float: right;margin-right: 15px; ">SORT BY: &nbsp;HIGHEST RATED</h6>
+                </div>
+                <div id="shop-one" style="margin-top: 60px">
+                    <div>
+                    	<div id="mydiv1" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-1.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img1">
+                            <img src="product-2.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img2">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p><s style="opacity: 0.4">$75.00</s> &nbsp;$55.00</p>
+                    </div>
+                    <div>
+                        <div id="mydiv2" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-2.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img3">
+                            <img src="product-3.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img4">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                    <div>
+                        <div id="mydiv3" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-3.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img5">
+                            <img src="product-4.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img6">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                </div>
+                <div id="shop-two">
+                    <div>
+                        <div id="mydiv4" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-4.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img7">
+                            <img src="product-5.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img8">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                    <div>
+                        <div id="mydiv5" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-5.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img9">
+                            <img src="product-6.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img10">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                    <div>
+                        <div id="mydiv6" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-6.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img11">
+                            <img src="product-7.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img12">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                </div>
+                <div id="shop-three">
+                    <div>
+                        <div id="mydiv7" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-7.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img13">
+                            <img src="product-8.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img14">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                    <div>
+                       <div id="mydiv8" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-8.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img15">
+                            <img src="product-9.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img16">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                    <div>
+                        <div id="mydiv9" style="position: relative;width: 255px;height: 348px;">
+                    		<img src="product-9.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; position: absolute;" id="img17">
+                            <img src="product-1.jpg" alt="" style="width: 255px;height: 348px;padding: 0 15px;transition: 0.5s; opacity: 0; position: absolute;" id="img18">
+                    	</div>
+                        <span>TOPSHOP</span>
+                        <h6>Knot Front Mini Dress</h6>
+                        <p>$80.00</p>
+                    </div>
+                </div>
+                <div id="btn-list" style="margin-left: 15px;">
+                     <div style="margin-right: 15px;"><</div>
+                     <div>1</div>
+                     <div>2</div>
+                     <div>3</div>
+                     <div>...</div>
+                     <div>21</div>
+                     <div style="margin-left: 15px;">></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="width:100%;height: 316px;background-color: #212529;">
+        <div id="foot-list" style="width: 1140px;height: 114px;margin: 0 auto;">
+            <div id="logo-left" style="padding-top: 70px;float: left;">
+            	<ul>
+            		<li style="margin-right: 40px;"><img src="logo2.png"/></li>
+            	    <li><a href="">Shop</a></li>
+               	    <li><a href="">Blog</a></li>
+            	    <li><a href="">Contact</a></li>
+            	</ul>
+            </div>
+            <div id="logo-list" style="float: left;padding-top: 70px;">
+            	 <div id="list-left" style="float: left;">
+            	 	<ul>
+            	 		<li><a href="">Order Status</a></li>
+            	 		<li><a href="">Shipping and Delivery</a></li>
+            	 		<li><a href="">Privacy Policy</a></li>
+            	 	</ul>
+            	 </div>
+            	 <div id="list-right" style="float: left;">
+            	 	<ul>
+            	 		<li><a href="">Payment Options</a></li>
+            	 		<li><a href="">Guides</a></li>
+            	 		<li><a href="">Terms of Use</a></li>
+            	 	</ul>
+            	 </div>
+            </div>
+        </div>
+        <br><br>
+        <div id="foot-foot" style="width: 1140px;height: 80px;margin: 0 auto;">
+        	<div id="fo-left" style="float: left; margin-right: 270px;">
+        		<h4 style="color: #fff;font-size: 12px;margin-left: 15px;">SUBSCRIBE</h4>
+        		<br>
+        	    <input placeholder="Your emali here" style="border: none;height: 35px;width: 270px;margin-left: 15px; background-color: #212529; border-bottom: 2px solid gainsboro;" />
+        	</div>
+        	<div id="fo-right" style="float: left;margin-top: 30px;">
+        		<img src="logo-list.png"/>
+        	</div>
+        </div>
+        <br>
+        <p style="text-align: center; color: rgba(255, 255, 255, 0.6);font-size: 14px;font-weight: 400px;">Copyright © 2018.Company name All rights reserved.<a href="" style="color: #fff;">网页模板</a></p>
+    </div>
+    <script>
+    	    var mydiv1= document.getElementById('mydiv1');
+			var img1 = document.getElementById("img1");
+			var img2 = document.getElementById("img2");
+			mydiv1.onmousemove = function(){
+				img2.style.opacity = 1;
+			}
+			mydiv1.onmouseout = function(){
+				img2.style.opacity = 0;
+			}
+			
+			var mydiv2= document.getElementById('mydiv2');
+			var img3 = document.getElementById("img3");
+			var img4 = document.getElementById("img4");
+			mydiv2.onmousemove = function(){
+				img4.style.opacity = 1;
+			}
+			mydiv2.onmouseout = function(){
+				img4.style.opacity = 0;
+			}
+			
+			var mydiv3= document.getElementById('mydiv3');
+			var img5 = document.getElementById("img5");
+			var img6 = document.getElementById("img6");
+			mydiv3.onmousemove = function(){
+				img6.style.opacity = 1;
+			}
+			mydiv3.onmouseout = function(){
+				img6.style.opacity = 0;
+			}
+			
+			var mydiv4= document.getElementById('mydiv4');
+			var img7 = document.getElementById("img7");
+			var img8 = document.getElementById("img8");
+			mydiv4.onmousemove = function(){
+				img8.style.opacity = 1;
+			}
+			mydiv4.onmouseout = function(){
+				img8.style.opacity = 0;
+			}
+			
+			var mydiv5= document.getElementById('mydiv5');
+			var img9 = document.getElementById("img9");
+			var img10 = document.getElementById("img10");
+			mydiv5.onmousemove = function(){
+				img10.style.opacity = 1;
+			}
+			mydiv5.onmouseout = function(){
+				img10.style.opacity = 0;
+			}
+			
+			var mydiv6= document.getElementById('mydiv6');
+			var img11 = document.getElementById("img11");
+			var img12 = document.getElementById("img12");
+			mydiv6.onmousemove = function(){
+				img12.style.opacity = 1;
+			}
+			mydiv6.onmouseout = function(){
+				img12.style.opacity = 0;
+			}
+			
+			var mydiv7= document.getElementById('mydiv7');
+			var img13 = document.getElementById("img13");
+			var img14 = document.getElementById("img14");
+			mydiv7.onmousemove = function(){
+				img14.style.opacity = 1;
+			}
+			mydiv7.onmouseout = function(){
+				img14.style.opacity = 0;
+			}
+			
+			var mydiv8= document.getElementById('mydiv8');
+			var img15 = document.getElementById("img15");
+			var img16 = document.getElementById("img16");
+			mydiv8.onmousemove = function(){
+				img16.style.opacity = 1;
+			}
+			mydiv8.onmouseout = function(){
+				img16.style.opacity = 0;
+			}
+			
+			var mydiv9= document.getElementById('mydiv9');
+			var img17 = document.getElementById("img17");
+			var img18 = document.getElementById("img18");
+			mydiv9.onmousemove = function(){
+				img18.style.opacity = 1;
+			}
+			mydiv9.onmouseout = function(){
+				img18.style.opacity = 0;
+			}
+    </script>
+</body>
+</html>
