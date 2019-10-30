@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js"></script>
+		<style type="text/css">
+			#mydiv{
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				background-color: forestgreen;
+				margin-right: 20px;
+				float: left;
+				border: 2px solid #FFF;
+			}
+		    li{
+		    	list-style: none;
+		    	width: 60px;
+		    	height: 60px;
+		    	margin-right: 20px;
+		    	float: left;
+		    	border-radius: 50%;
+		    	border: 2px solid #FFF;
+		    }
+		</style>
+	</head>
+	<body style="background-color:forestgreen ;">
+		<div id="mydiv" ></div>
+		<ul class="ul">
+			<li style="background-color: red;"></li>
+			<li style="background-color: fuchsia;"></li>
+			<li style="background-color: aquamarine;"></li>
+			<li style="background-color: blueviolet;"></li>
+			<li style="background-color: olive;"></li>
+			<li style="background-color: teal;"></li>
+		</ul>
+		<script>
+			$(".ul>li").hide()
+			var $i= 0;
+			$("#mydiv").click(function(){
+				$i++
+				if($i%2==0){
+					$(".ul>li").hide()
+				}else{
+					$(".ul>li").show()
+				}
+			})
+			$("#mydiv").click(function(){$("body").css("backgroundColor","forestgreen")})
+			$(".ul>li:nth-child(1)").click(function(){$("body").css("backgroundColor","red")})
+			$(".ul>li:nth-child(2)").click(function(){$("body").css("backgroundColor","fuchsia")})
+			$(".ul>li:nth-child(3)").click(function(){$("body").css("backgroundColor","aquamarine")})
+			$(".ul>li:nth-child(4)").click(function(){$("body").css("backgroundColor","blueviolet")})
+			$(".ul>li:nth-child(5)").click(function(){$("body").css("backgroundColor","olive")})
+			$(".ul>li:nth-child(6)").click(function(){$("body").css("backgroundColor","teal")})
+		</script>
+	</body>
+</html>
